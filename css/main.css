@@ -13,17 +13,20 @@ I've left some boilerplate below for you.
 */
 
 body {
+  min-width: 325px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+article {}
 
+h1 {}
+
+img {}
+
+.global-display{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
-article {
-
-}
-
-h1 {
-
-}
-
-img {
-
-}
+.blog__entry{}

@@ -1,3 +1,5 @@
+<!-- python -m SimpleHTTPServer -->
+
 # Responsive Images: Project Part 1 #
 
 ## Your Goals: ##
