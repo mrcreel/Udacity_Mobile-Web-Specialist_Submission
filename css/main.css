@@ -1,32 +1,16 @@
-/*
-
-Your styles go here!
-
-Hint! You'll probably want to start by styling:
-  * <body>
-  * <article>
-  * <h1>
-  * <img>
-
-I've left some boilerplate below for you.
-
-*/
-
-body {
-  min-width: 325px;
-  max-width: 800px;
-  margin: 0 auto;
+html{
+  background-color: #e6ecf0;
 }
-article {}
-
-h1 {}
-
-img {}
-
+body {
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+}
 .global-display{
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
 }
-
-.blog__entry{}
+.blog__entry--image{
+  width: 100%;
+}
