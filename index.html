@@ -1,7 +1,6 @@
 <!-- python -m SimpleHTTPServer -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
 
@@ -11,21 +10,71 @@
   <meta itemprop="name" content="Udacity Responsive Images course project">
   <meta name="mobile-web-app-capable" content="yes">
   <meta id="theme-color" name="theme-color" content="#307699">
+  <meta charset=“utf-8”>
 
   <!-- loads the Udacity Feedback extension -->
   <meta name="udacity-grader" content="http://udacity.github.io/responsive-images/project/project-grader.json" unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
 
   <base target="_blank">
 
+  <link rel="manifest" href="public/manifest.json">
+
   <title>My responsive blog: picture story</title>
 
-  <link rel="stylesheet" href="css/main.css" />
+  <!-- <link rel="stylesheet" href="css/main.css" /> -->
+
+  <style>
+    html {
+      background-color: #e6ecf0;
+    }
+
+    body {
+      min-width: 300px;
+      max-width: 850px;
+      margin: 0 auto;
+      background-color: white;
+      font-size: 18px;
+      line-height: 1.2em;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    .global-display {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .blog__entry--image {
+      max-width: 100%;
+    }
+
+    .zocial {
+      margin: auto;
+    }
+  </style>
+  <style>
+    /* zocial */
+
+    @import url(http://weloveiconfonts.com/api/?family=zocial);
+    [class*="zocial-"]:before {
+      font-family: 'zocial', sans-serif;
+    }
+  </style>
 
 </head>
 
 <body>
   <header>
-    <img src="images_src/still_life.jpg" style="height: 80px;"> My responsive blog
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Cheese.svg" alt="still life" style="height: 80px;"> My responsive blog
+    <!-- By Olivier Grisel <olivier.grisel@ensta.org> [Public domain], from Wikimedia Commons -->
   </header>
   <main>
     <section class="blog global-display">
@@ -35,20 +84,20 @@
         </div>
         <div class="blog__entry--text">
           <p>
-            I love cheese, especially manchego swiss.
-            <img src="images_src/fixed/smiley_face.png"> Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese
-            everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits
-            everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.
+            I love cheese, especially manchego swiss. &#128526; Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert
+            de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi
+            cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese
+            ricotta. Cheesy grin mozzarella.
           </p>
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/horses.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/horses-600_small.jpg" alt="horses">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>
             Bocconcini swiss cut the cheese. Manchego boursin smelly cheese cheesy grin squirty cheese mozzarella cheddar hard cheese.
@@ -64,12 +113,12 @@
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/volt.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/volt-600_small.jpg" alt="volt">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>
             Edam parmesan smelly cheese. Dolcelatte say cheese cheesy feet lancashire cow boursin stinking bishop brie. Stilton cheese
@@ -79,12 +128,12 @@
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/cockatoos.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/cockatoos-600_small.jpg" alt="cockatoos">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>
             Babybel cream cheese cheese on toast. Brie fromage swiss cheese and biscuits hard cheese babybel bocconcini brie. Cheesy
@@ -109,12 +158,12 @@
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/postcard.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/postcard-600_small.jpg" alt="postcard">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>Pecorino pepper jack cheesy feet. Smelly cheese cauliflower cheese fromage halloumi cream cheese who moved my cheese
             fromage fondue. Feta danish fontina cheesy grin mozzarella fromage cheesy grin airedale paneer. Cheddar halloumi
@@ -123,12 +172,12 @@
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/grasshopper.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/grasshopper-600_small.jpg" alt="grasshopper">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>
             Babybel cream cheese cheese on toast. Brie fromage swiss cheese and biscuits hard cheese babybel bocconcini brie. Cheesy
@@ -138,12 +187,12 @@
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/sfo.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/sfo-600_small.jpg" alt="sfo">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>
             Say cheese swiss cheesy grin. Cheese on toast queso bocconcini cheeseburger fondue manchego smelly cheese port-salut. Cream
@@ -153,12 +202,12 @@
         </div>
       </article>
       <article class="blog__entry global-display">
-        <picture>
-          <figure>
-            <img class="blog__entry--image" src="images_src/rosella.jpg">
-            <figcaption>Test Caption</figcaption>
-          </figure>
-        </picture>
+        <figure>
+          <picture>
+            <img class="blog__entry--image" src="images/rosella-600_small.jpg" alt="rosella">
+          </picture>
+          <figcaption>Test Caption</figcaption>
+        </figure>
         <div class="blog__entry--text">
           <p>
             Paneer st. agur blue cheese bocconcini. The big cheese chalk and cheese cheese and biscuits cream cheese cheese triangles
@@ -171,14 +220,28 @@
     </section>
   </main>
   <footer class=" global-display">
-    <img style="max-width: 100%" src="images_src/fixed/flourish.png">
-    <!--
-Flourish credit: http://pixabay.com/en/flourish-line-border-decoration-31609/
--->
+    <img style="width: 100%" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Decorative_text_divider_-_central_flare.svg"
+      alt="divider">
+    <!-- Credit: By Inductiveload [Public domain], from Wikimedia Commons -->
 
-    <a href="//github.com/udacity/responsive-images/tree/master/project/start" title="View source for this page on GitHub" id="viewSource">
-      View source on GitHub
-    </a>
+    <div class="global-display" style="width: 100%;">
+      <div class="global-display" style="width: 20%;">
+        <a href="#" class="zocial zocial-twitter" title="twitter" id="twitter_link"></a>
+      </div>
+      <div class="global-display" style="width: 20%;">
+        <a href="#" class="zocial zocial-digg" title="digg" id="digg_link"></a>
+      </div>
+      <div class="global-display" style="width: 20%;">
+        <a href="#" class="zocial zocial-facebook" title="facebook" id="facebook_link"></a>
+      </div>
+      <div class="global-display" style="width: 20%;">
+        <a href="#" class="zocial zocial-googleplus" title="googleplus" id="googlePlus_link"></a>
+      </div>
+      <div class="global-display" style="width: 20%;">
+        <a href="//github.com/udacity/responsive-images/tree/master/project/start" class="zocial zocial-github" title="View source for this page on GitHub"
+          id="viewSource"></a>
+      </div>
+    </div>
   </footer>
 </body>
 

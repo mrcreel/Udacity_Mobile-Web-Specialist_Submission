@@ -3,9 +3,11 @@ html{
 }
 body {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 850px;
   margin: 0 auto;
   background-color: white;
+  font-size: 18px;
+  line-height: 1.2em;
 }
 .global-display{
   display: flex;
