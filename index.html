@@ -1,16 +1,16 @@
 <!-- python -m SimpleHTTPServer -->
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
-
   <meta name="description" content="Udacity Responsive Images course project" />
   <meta name="author" content="//samdutton.com">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
   <meta itemprop="name" content="Udacity Responsive Images course project">
+  <meta itemprop="image" content="images/icon.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta id="theme-color" name="theme-color" content="#307699">
-  <meta charset=“utf-8”>
 
   <!-- loads the Udacity Feedback extension -->
   <meta name="udacity-grader" content="http://udacity.github.io/responsive-images/project/project-grader.json" unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
@@ -51,6 +51,16 @@
       flex-wrap: wrap;
     }
 
+    .card {
+      /* Add shadows to create the "card" effect */
+      border: solid #e6ecf0 1px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+    .blog__entry{
+      margin: 1em;
+      padding: 0.5em;
+    }
     .blog__entry--image {
       max-width: 100%;
     }
@@ -70,33 +80,34 @@
 
 </head>
 
-<body>
-  <header>
+<header class="global-display">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Cheese.svg" alt="still life" style="height: 80px;">
+  <h1>My responsive blog</h1>
+  <!-- By Olivier Grisel <olivier.grisel@ensta.org> [Public domain], from Wikimedia Commons -->
+</header>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Cheese.svg" alt="still life" style="height: 80px;"> My responsive blog
-    <!-- By Olivier Grisel <olivier.grisel@ensta.org> [Public domain], from Wikimedia Commons -->
-  </header>
+<body>
   <main>
     <section class="blog global-display">
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <div class="blog__entry--headline">
           <h2>My story</h2>
         </div>
         <div class="blog__entry--text">
           <p>
-            I love cheese, especially manchego swiss. &#128526; Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert
-            de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi
-            cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese
-            ricotta. Cheesy grin mozzarella.
+            I love cheese, especially manchego swiss. 😎 Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie
+            bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue.
+            Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta.
+            Cheesy grin mozzarella.
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/horses-600_small.jpg" alt="horses">
           </picture>
-          <figcaption>Test Caption</figcaption>
+          <figcaption>Horses</figcaption>
         </figure>
         <div class="blog__entry--text">
           <p>
@@ -112,7 +123,7 @@
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/volt-600_small.jpg" alt="volt">
@@ -127,7 +138,7 @@
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/cockatoos-600_small.jpg" alt="cockatoos">
@@ -157,7 +168,7 @@
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/postcard-600_small.jpg" alt="postcard">
@@ -171,7 +182,7 @@
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/grasshopper-600_small.jpg" alt="grasshopper">
@@ -186,7 +197,7 @@
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/sfo-600_small.jpg" alt="sfo">
@@ -201,7 +212,7 @@
           </p>
         </div>
       </article>
-      <article class="blog__entry global-display">
+      <article class="blog__entry global-display card">
         <figure>
           <picture>
             <img class="blog__entry--image" src="images/rosella-600_small.jpg" alt="rosella">
@@ -219,12 +230,12 @@
       </article>
     </section>
   </main>
-  <footer class=" global-display">
+  <footer class="global-display">
     <img style="width: 100%" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Decorative_text_divider_-_central_flare.svg"
       alt="divider">
     <!-- Credit: By Inductiveload [Public domain], from Wikimedia Commons -->
 
-    <div class="global-display" style="width: 100%;">
+    <div class="global-display" style="margin: 1em 0; width: 100%;">
       <div class="global-display" style="width: 20%;">
         <a href="#" class="zocial zocial-twitter" title="twitter" id="twitter_link"></a>
       </div>
