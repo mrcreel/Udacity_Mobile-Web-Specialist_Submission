@@ -1,6 +1,6 @@
 <!-- python -m SimpleHTTPServer -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="description" content="Udacity Responsive Images course project" />
@@ -37,6 +37,10 @@
       line-height: 1.2em;
     }
 
+    footer {
+      margin-bottom: 1em;
+    }
+
     a {
       color: black;
       text-decoration: none;
@@ -57,10 +61,16 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
     }
-    .blog__entry{
+
+    .blog {
+      border-bottom: groove #e6ecf0 2px;
+    }
+
+    .blog__entry {
       margin: 1em;
       padding: 0.5em;
     }
+
     .blog__entry--image {
       max-width: 100%;
     }
@@ -231,28 +241,26 @@
     </section>
   </main>
   <footer class="global-display">
-    <img style="width: 100%" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Decorative_text_divider_-_central_flare.svg"
-      alt="divider">
-    <!-- Credit: By Inductiveload [Public domain], from Wikimedia Commons -->
 
     <div class="global-display" style="margin: 1em 0; width: 100%;">
-      <div class="global-display" style="width: 20%;">
+      <div class="global-display" style="width: 25%;">
         <a href="#" class="zocial zocial-twitter" title="twitter" id="twitter_link"></a>
       </div>
-      <div class="global-display" style="width: 20%;">
+      <div class="global-display" style="width: 25%;">
         <a href="#" class="zocial zocial-digg" title="digg" id="digg_link"></a>
       </div>
-      <div class="global-display" style="width: 20%;">
+      <div class="global-display" style="width: 25%;">
         <a href="#" class="zocial zocial-facebook" title="facebook" id="facebook_link"></a>
       </div>
-      <div class="global-display" style="width: 20%;">
+      <div class="global-display" style="width: 25%;">
         <a href="#" class="zocial zocial-googleplus" title="googleplus" id="googlePlus_link"></a>
       </div>
-      <div class="global-display" style="width: 20%;">
-        <a href="//github.com/udacity/responsive-images/tree/master/project/start" class="zocial zocial-github" title="View source for this page on GitHub"
-          id="viewSource"></a>
-      </div>
     </div>
+    <div class="global-display" style="width: 100%; margin: 0 auto;">
+      <a href="//github.com/udacity/responsive-images/tree/master/project/start" title="View source for this page on GitHub" style="margin: auto;"
+        id="viewSource">View source for this page on GitHub</a>
+    </div>
+
   </footer>
 </body>
 
