@@ -73,11 +73,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-imagemagick');
 
   grunt.registerTask('default',
     [
-      'imagemagick-hisrc',
       'clean',
       'mkdir',
       'copy',
