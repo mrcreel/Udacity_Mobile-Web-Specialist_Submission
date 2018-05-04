@@ -7,14 +7,8 @@
 */
 
 module.exports = function(grunt) {
-
   grunt.initConfig({
-    "imagemagick-hisrc":{
-      dev:{
-        files:"images_src/*.jpg",
-        suffix:["-2x","-1x","-low"],
-      }
-    },
+
     responsive_images: {
       dev: {
         options: {
