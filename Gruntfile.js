@@ -9,32 +9,30 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    "imagemagick-hisrc":{
+      dev:{
+        files:"images_src/*.jpg",
+        suffix:["-2x","-1x","-low"],
+      }
+    },
     responsive_images: {
       dev: {
         options: {
           engine: 'im',
-          sizes: [{
-            /*
-            Change these:
-
-            width: ,
-            suffix: ,
-            quality:
-            */
-
-            width: '600px',
-            suffix: '_small',
-            quality: 20,
-          },
-          {
-            width: '1000px',
-            suffix: '_large',
-            quality: 40,
-
-          },
+          convert: [],
+          sizes: [
+            {
+              width: '600px',
+              suffix: '_small',
+              quality: 20,
+            },
+            {
+              width: '1000px',
+              suffix: '_large',
+              quality: 40,
+            },
           ],
         },
-
         /*
         You don't need to change this part if you don't change
         the directory structure.
@@ -80,6 +78,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-imagemagick');
 
+  grunt.registerTask('default',
+    [
+      'imagemagick-hisrc',
+      'clean',
+      'mkdir',
+      'copy',
+      'responsive_images'
+    ]
+  );
 };

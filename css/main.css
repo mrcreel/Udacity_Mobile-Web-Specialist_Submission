@@ -16,3 +16,6 @@ body {
 .blog__entry--image{
   max-width: 100%;
 }
+.blog__entry--headline{
+  width: 100%;
+}
